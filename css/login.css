@@ -1,0 +1,34 @@
+body{
+        height: 100vh;
+        margin: 0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+}
+.login-form{
+    width: 360px;
+    padding: 30px;
+    border: 1px solid #14e9a9;
+    border-radius: 8px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input {
+    width: 360px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    background-color: #11fb6b;
+    color: #160701;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
