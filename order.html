@@ -2,29 +2,54 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>タイトル</title>
+        <title>商品登録</title>
         <meta name="description" content="">
+        <link rel="stylesheet" href="css/order.css">
     </head>
 
     <body>
-    <header>
-        <nav>
-            <li><a href="product.html">商品画面一覧</a></li>
-            <li><a href="registration.html">注文画面一覧</a></li>
-        </nav>
-    </header>
-    
-    <section>
-        <img src="imagescofee/hokahokacofee.webp" alt="ホットコーヒー">
 
-        <h2>商品名: ホットコーヒー</h2>
-        <h2>値段: 290円</h2>
-    </section>
-    
-    <h3>商品説明</h3>
-    <p>厳選したコーヒー豆を使用し、一杯ずつ丁寧に抽出したホットコーヒーです。
-    豊かな香りとバランスの取れた苦味が特徴で、食事のお供にも、休憩時間にも最適です。</p>
+    <nav class="nav">
+        <ul>
+            <li><a href="order.html">商品登録</a></li>
+            <li><a href="product.html">商品一覧</a></li>
+            <li><a href="registration.html">注文一覧</a></li>
+        </ul>
+    </nav>
 
-    <input type="submit" value="注文する">
-  </body>
+    <h1 class="page-title">商品登録</h1>
+
+	<form action="product.html" method="post" enctype="multipart/form-data"class="form">
+        <div class="upload-area">
+            <label class="upload-box">
+                <span class="upload-btn">画像を選択してください。</span>
+                <input type="file" name="image" accept="image/*" hidden>
+            </label>
+        </div>
+
+        <div class="field">
+            <label>商品名:</label>
+            <input type="text" name="name">
+        </div>
+
+        <div class="field">
+            <label>値段:</label>
+            <input type="text" name="name">
+        </div>
+
+        <div class="field">
+            <label>商品説明</label>
+            <textarea name="message"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">登録</button>
+    </form>
+
+    <footer>
+        名前:名字名前
+        学籍番号:s25001
+    </footer>
+
+    </body>
 </html>
+

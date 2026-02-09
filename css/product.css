@@ -1,9 +1,32 @@
+nav ul{
+	list-style:none;
+    display: flex; /* 真ん中*/
+    justify-content:center;
+    gap:20px; /*間隔*/
+}
+nav{
+    border-bottom: 2px solid #ccc;
+}
+nav a{
+    font-size:20px;   /* 文字の大きさ*/
+    padding:12px 20px;/* クリック領域 */
+    display:block;    /* 面積化 */
+}
 body{
     margin: 0;
     font-family: sans-serif;
 }
+.page-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight:bold; /*太字*/
+    margin:30px 0 20px;
+    letter-spacing:2px;  /* 文字間隔 */
+    color: #eff0f3;
+    background-color: #c80404;
+}
 
-/* ===== ページング ===== */
+/*ページング*/
 .pagination{
     display: flex;
     justify-content: center;
@@ -23,7 +46,7 @@ body{
     background: #eee;
 }
 
-/* ===== 商品一覧 ===== */
+/*商品一覧*/
 .product-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,7 +78,7 @@ body{
     font-size: 14px;
     color: #555;
 }
-/* ===== ページ番号ボタン ===== */
+/*ページ番号ボタン*/
 .page{
     width: 40px;
     height: 40px;
