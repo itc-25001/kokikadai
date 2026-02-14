@@ -42,8 +42,8 @@ body{
 .thumbnail{
     width:80px;
     height:80px;
-    border:1px solid #ccc;
-    border-radius:6px;
+    border:1px solid #ccc; /*太さ　線の種類　色*/
+    border-radius:6px; /*枠を丸くする*/
     overflow:hidden; /* 画像はみ出し防止 */
 }
 
