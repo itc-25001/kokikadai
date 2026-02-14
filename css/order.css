@@ -1,102 +1,125 @@
 body{
-    font-family: sans-serif;
-    background:#f7f7f7;
+  font-family: sans-serif;
+  background:#f7f7f7;
+  margin: 0;
 }
+
+/* ===== ナビ ===== */
 .nav{
-    border-bottom: 2px solid #ccc;
+  background:#f5f7fa;
+  border-bottom:1px solid #ddd;
 }
 .nav ul{
-    display:flex;
-    gap:20px;
-    list-style:none;
-    justify-content:center;
+  display:flex;
+  gap:30px;
+  list-style:none;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+  padding:15px 0;
 }
 .nav a{
-    font-size:20px;   /* 文字の大きさ*/
-    padding:12px 20px;/* クリック領域 */
-    display:block;    /* 面積化 */
+  font-size:16px;
+  text-decoration:none;
+  color:#4a6c86;
+  font-weight:bold;
+  padding:6px 15px;
+  border-radius:20px;
 }
+.nav a:hover{
+  background:#e9eef5;
+}
+
+/* ===== タイトル ===== */
 .page-title{
-    text-align: center;
-    font-size: 32px;
-    font-weight:bold; /*太字*/
-    margin:30px 0 20px;
-    letter-spacing:2px;  /* 文字間隔 */
-    color: #eff0f3;
-    background-color: #0881de;
+  text-align: center;
+  font-size: 32px;
+  font-weight:bold;
+  margin:30px 0 20px;
+  letter-spacing:2px;
+  color: #eff0f3;
+  background-color: #0881de;
+  padding: 12px 0;
 }
+
+/* ===== フォーム ===== */
 .form{
-    max-width:800px;
-    margin:40px auto;
-    background:#fff;
-    padding:30px;
+  max-width:800px;
+  margin:40px auto;
+  background:#fff;
+  padding:30px;
+  border-radius:8px;
 }
 
+/* ===== アップロード ===== */
 .upload-area{
-    margin-bottom:30px;
+  margin-bottom:30px;
 }
-
 .upload-box{
-    border:2px dashed #ccc; /*dashedは破線*/
-    height:260px;
-    display:flex;
-    align-items:center;
-    justify-content:center; /* 中央配置 */
-    cursor:pointer; /*マウスを近づけたとき、指マークになるよう*/
-    background:#fafafa;
+  border:2px dashed #ccc;
+  height:260px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  background:#fafafa;
+  border-radius:8px;
 }
-
 .upload-btn{
-    border:2px dashed #5aa7e0; /* ボタン周囲に点線 */
-    color:#5aa7e0;
-    padding:12px 28px;
-    border-radius:6px;
-    font-size:16px;
+  border:2px dashed #5aa7e0;   /* 点線ボタン */
+  color:#5aa7e0;
+  padding:12px 28px;
+  border-radius:6px;
+  font-size:16px;
+  background:#fff;
 }
 
-.upload-text{
-    font-size:18px;
-    margin-bottom:15px;
-}
-
-.upload-btn{
-    border:1px solid #5aa7e0;
-    color:#5aa7e0;
-    padding:8px 20px;
-    border-radius:4px;
-}
-
+/* ===== 入力欄 ===== */
 .field{
-    margin-bottom:20px;
+  margin-bottom:20px;
 }
 .field label{
-    display:block;
-    margin-bottom:6px;
+  display:block;
+  margin-bottom:6px;
+  font-weight:600;
 }
 .field input{
-    width:100%;
-    padding:8px;
-    height:30px;
+  width:100%;
+  padding:8px;
+  height:30px;
+  border:1px solid #ccc;
+  border-radius:6px;
 }
-
 .field textarea{
-    width:100%;
-    padding:8px;
-    height:100px;   /* ← ここを大きくする */
+  width:100%;
+  padding:8px;
+  height:140px;     /* 商品説明だけ広め */
+  border:1px solid #ccc;
+  border-radius:6px;
+  resize: vertical; /* 縦だけ伸ばせる */
 }
 
-
+/* ===== 登録ボタン ===== */
 .submit-btn{
-    padding:10px 30px;
-    display:block;
-    margin:30px auto;
-    font-size:17px;
+  padding:10px 30px;
+  display:block;
+  margin:30px auto;
+  font-size:17px;
+  border:1px solid #888;
+  border-radius:6px;
+  background:#f2f2f2;
+  cursor:pointer;
 }
+.submit-btn:hover{
+  background:#e6e6e6;
+}
+
+/* ===== フッター ===== */
 footer{
-    margin-top:40px;
-    padding:15px 10px;
-    text-align:center;
-    border-top:1px solid #ccc;
-    background:#0510e7;
-    color: #f5f5f5;
+  margin-top:40px;
+  padding:15px 10px;
+  text-align:center;
+  border-top:1px solid #ccc;
+  background:#0510e7;
+  color: #f5f5f5;
 }

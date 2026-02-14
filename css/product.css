@@ -1,29 +1,41 @@
-nav ul{
-	list-style:none;
-    display: flex; /* 真ん中*/
-    justify-content:center;
-    gap:20px; /*間隔*/
+.nav{
+  background:#f5f7fa;
+  border-bottom:1px solid #ddd;
 }
-nav{
-    border-bottom: 2px solid #ccc;
+.nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+  padding:15px 0;
 }
-nav a{
-    font-size:20px;   /* 文字の大きさ*/
-    padding:12px 20px;/* クリック領域 */
-    display:block;    /* 面積化 */
+.nav a{
+  font-size:16px;
+  text-decoration:none;
+  color:#4a6c86;
+  font-weight:bold;
+  padding:6px 15px;
+  border-radius:20px;
 }
+.nav a:hover{
+  background:#e9eef5;
+}
+
 body{
     margin: 0;
     font-family: sans-serif;
 }
 .page-title{
-    text-align: center;
-    font-size: 32px;
-    font-weight:bold; /*太字*/
-    margin:30px 0 20px;
-    letter-spacing:2px;  /* 文字間隔 */
-    color: #eff0f3;
-    background-color: #c80404;
+  text-align: center;
+  font-size: 32px;
+  font-weight:bold;
+  margin:30px 0 20px;
+  letter-spacing:2px;
+  color: #eff0f3;
+  background-color: #f10e69;
+  padding: 12px 0;
 }
 
 /*ページング*/
