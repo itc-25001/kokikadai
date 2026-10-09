@@ -4,4 +4,4 @@
 [ログイン画面を見る](https://itc-25001.github.io/kokikadai/login.html)
 
 ## 商品登録、商品一覧、注文一覧
-[注文一覧を見る](https://itc-25001.github.io/kokikadai/order.html)
+[サイトを見る](https://itc-25001.github.io/kokikadai/order.html)
